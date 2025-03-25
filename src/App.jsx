@@ -21,7 +21,7 @@ import ProductsPage from "./pages/products/ProductsPage.jsx";
 import AddNewCategoryPage from "./pages/categories/AddNewCategoryPage.jsx";
 import EditCategoryPage from "./pages/categories/EditCategoryPage.jsx";
 import WelcomeSpinner from "./components/WelcomeSpinner.jsx";
-import motionBg2 from "./assets/motion2.jpg";
+import motionBg2 from "./assets/motion2.webp";
 
 // Animated Routes Component
 const AnimatedRoutes = () => {
@@ -30,7 +30,7 @@ const AnimatedRoutes = () => {
   return (
     <div
       id="app-container"
-      className="w-full min-h-screen bg-[#000] overflow-x-hidden"
+      className="w-full min-h-screen bg-[#000] overflow-hidden"
     >
       <Routes location={location}>
         <Route path="/" element={<MainLayout />}>

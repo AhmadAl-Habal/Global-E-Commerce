@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.webp";
 import {
   FaFacebook,
   FaInstagram,
@@ -43,7 +43,7 @@ const Footer = () => {
                     href={social_media.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-white hover:text-blue-500 transition-colors"
+                    className="flex items-center gap-2 text-white hover:text-red-500 transition-colors"
                   >
                     <FaFacebook />
                     <span className="hidden md:block">Facebook</span>
@@ -71,7 +71,7 @@ const Footer = () => {
                     href={social_media.telegram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-white hover:text-blue-400 transition-colors"
+                    className="flex items-center gap-2 text-white hover:text-red-400 transition-colors"
                   >
                     <FaTelegram />
                     <span className="hidden md:block">Telegram</span>

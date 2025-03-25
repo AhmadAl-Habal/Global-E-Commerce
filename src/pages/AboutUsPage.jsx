@@ -47,7 +47,9 @@ const AboutUsPage = () => {
               <p>Error: {error}</p>
             ) : (
               <div>
-                <h1 className="text-2xl font-bold mb-5">عن Vapo Abo Mariam</h1>
+                <h1 className="text-2xl font-bold mb-5">
+                  عن Global E-Commerce
+                </h1>
                 <p className="w-full whitespace-pre-wrap text-white text-md font-bold">
                   {aboutUs}
                 </p>

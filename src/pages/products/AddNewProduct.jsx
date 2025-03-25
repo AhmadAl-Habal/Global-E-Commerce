@@ -42,7 +42,7 @@ const AddNewProduct = () => {
       const response = await createProduct(data, token);
 
       if (response.status === 201) {
-        setStatusMessage("Product created successfully!, Redirecting...");
+        setStatusMessage("Product created successfully!, redirecting...");
         console.log(response);
 
         setTimeout(() => {

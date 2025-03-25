@@ -249,7 +249,7 @@ const SettingsPage = () => {
                 {loading ? "loading" : "Save"}
               </button>
             </div>
-
+            <p className="text-lg text-red-700 font-bold"> {statusMessage}</p>
             <div className="relative w-[80vw] mx-auto py-5 space-y-5">
               <Whatsapp accounts={whatsappLink} />
               {!loading && settings?.hero && (
@@ -269,7 +269,6 @@ const SettingsPage = () => {
               )}
             </div>
           </div>
-          <p className="text-lg text-red-700 font-bold"> {statusMessage}</p>
         </div>
       </div>
     </>

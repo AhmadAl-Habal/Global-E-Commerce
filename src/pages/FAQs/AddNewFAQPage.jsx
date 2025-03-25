@@ -25,7 +25,7 @@ const AddNewFAQPage = () => {
 
     try {
       await addFAQ(data, token);
-      setStatusMessage("FAQ created successfully! Redirecting...");
+      setStatusMessage("FAQ created successfully! redirecting...");
       setTimeout(() => navigate("/faq"), 2000);
     } catch {
       setStatusMessage("Error creating FAQ. Please try again.");
@@ -55,7 +55,9 @@ const AddNewFAQPage = () => {
             <label className="text-white font-bold w-1/4">Question</label>
             <textarea
               dir="rtl"
-              {...register("question", { required: "This field is required" })}
+              {...register("question", {
+                required: "This field is required",
+              })}
               className="border rounded p-2 w-3/4 bg-red-100 resize-none overflow-hidden"
               rows={1}
               onInput={(e) => {

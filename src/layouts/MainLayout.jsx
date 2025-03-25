@@ -30,7 +30,7 @@ const MainLayout = () => {
 
   return (
     <>
-      {location.pathname === "/" && <WarnningMessage />}
+      {/* {location.pathname === "/" && <WarnningMessage />} */}
 
       <div className="relative min-h-[100vh]">
         {/* Background Image */}

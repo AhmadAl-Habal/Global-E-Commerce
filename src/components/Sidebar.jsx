@@ -12,11 +12,11 @@ const Sidebar = ({ isOpen, toggleSidebar, token }) => {
       >
         {/* Background Image with Opacity */}
         <div
-          className="absolute inset-0 bg-cover bg-center z-0"
-          style={{
-            backgroundImage: `url(${motionBg2})`,
-            opacity: 0.8,
-          }}
+          className="absolute inset-0 bg-black bg-cover bg-center z-0"
+          // style={{
+          //   backgroundImage: `url(${motionBg2})`,
+          //   opacity: 0.8,
+          // }}
         ></div>
 
         {/* Dark Overlay */}
@@ -43,7 +43,7 @@ const Sidebar = ({ isOpen, toggleSidebar, token }) => {
               className="block text-lg font-medium hover:text-gray-300"
               onClick={toggleSidebar}
             >
-              عن Vapo Abo Mariam
+              عن Global E-Commerce
             </Link>
             <Link
               to="/faq"

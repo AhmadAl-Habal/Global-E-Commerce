@@ -10,8 +10,14 @@ const LoginPage = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
-  } = useForm();
+  } = useForm({
+    defaultValues: {
+      username: "Global_E-Commerce",
+      password: "Global_E-Commerce12345",
+    },
+  });
   const [loading, setLoading] = useState(false);
   const [loginStatus, setLoginStatus] = useState("");
 
@@ -22,7 +28,7 @@ const LoginPage = () => {
     try {
       const userData = await loginUser(data.username, data.password);
       setAuthToken(userData.token);
-      setLoginStatus("Login successful, redirecting...");
+      setLoginStatus("Login successful, Redirecting...");
     } catch (error) {
       setLoginStatus(error.message || "Login failed, please try again.");
     } finally {
@@ -51,11 +57,11 @@ const LoginPage = () => {
           <input
             type="text"
             placeholder="UserName "
-            {...register("username", { required: "Username is required" })}
-            className="border rounded p-1 bg-red-100 outline-none w-full mt-3"
+            {...register("username", { requiblue: "Username is requiblue" })}
+            className="border rounded p-1 bg-blue-100 outline-none w-full mt-3"
           />
           {errors.username && (
-            <p className="font-bold text-red-500">{errors.username.message}</p>
+            <p className="font-bold text-blue-500">{errors.username.message}</p>
           )}
         </div>
         <div>
@@ -63,11 +69,11 @@ const LoginPage = () => {
           <input
             type="password"
             placeholder="Password"
-            {...register("password", { required: "Password is required" })}
-            className="border rounded p-1 bg-red-100 outline-none w-full mt-3"
+            {...register("password", { requiblue: "Password is requiblue" })}
+            className="border rounded p-1 bg-blue-100 outline-none w-full mt-3"
           />
           {errors.password && (
-            <p className="font-bold text-red-500">{errors.password.message}</p>
+            <p className="font-bold text-blue-500">{errors.password.message}</p>
           )}
         </div>
         <div className="flex">
